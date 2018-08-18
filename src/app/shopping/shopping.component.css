@@ -1,0 +1,21 @@
+.video{
+    box-shadow: 1px 1px 20px black;
+}
+.btnBuy{
+    float:right;
+    background-color: white;
+    color: #ff4169;
+}
+.btn{
+    border: 3px solid #ff4169;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    min-width: 150px;
+    box-shadow: 3px 3px 10px black;
+    text-decoration: none;
+}
+.btnCart{
+    color: white;
+    background-color: #ff4169;
+}

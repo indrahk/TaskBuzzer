@@ -1,0 +1,70 @@
+<div class="row" style="padding: 10%">
+  <div class="col-sm-5">
+    <div class="row">
+      <div style="border-bottom: 3px solid black">
+        <h2 style="padding:10px; padding-top: 0px">Your Cart</h2>
+      </div>
+    </div>
+    <div class="row" style="padding: 10%">
+      <div class="row" style="font-weight: bold; font-size:18px;">
+        <span>Trilens</span>
+      </div>
+      <div class="row" style="padding: 10px; padding-left:30px">
+        <img src="../assets/img/prodImg.jpeg" class="img-responsive" style="width:50%; height:30%;" alt="Image">
+      </div>
+      <div class="row" style="padding-top:10px">
+        <div>
+          <span style="padding-right:10%">Quatity:
+          </span>
+        
+          <input type='number' name="count" style="width: 50px;" />
+        </div>
+      </div>
+      <div class="row" style="padding-top:10px">
+        <span style="padding-right:12%">Price:</span>
+        <span style="padding-right:10%" data-bind=" text: price()"> &euro; + Shipping</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2"></div>
+  <div class="col-sm-5">
+    <div class="row">
+      <div style="border-bottom: 3px solid black">
+        <h2 style="padding:10px; padding-top: 0px">Payment Options</h2>
+      </div>
+    </div>
+    <div class="row" style="padding: 10% 0px 0px 0px">
+      <div class="row" style="font-weight: bold; font-size:18px; padding-left: 20px">
+        <fa-icon [icon]="faCreditCard" style="color:red; padding-right:5px"></fa-icon>Credit Card
+      </div>
+      <div class="row" style="padding: 20px 0px 0px 20%">
+        <!-- Card Number -->
+        <div class="control-group row" style="padding-bottom:10px">
+          <label class="control-label col-sm-4" for="email" style="padding-right:5px">Card Number:</label>
+          <input type="text" id="email" name="email">
+        </div>
+        <!--Card CVV-->
+        <div class="control-group row" style="padding-bottom:10px">
+          <label class="control-label col-sm-4" for="password" style="padding-right:5px">Verification Number:</label>
+          <input type="Number" id="cvv" name="CVV">
+        </div>
+        <!--Card Expires-->
+        <div class="control-group row" style="padding-bottom:10px">
+          <label class="control-label col-sm-4" for="password"  style="padding-right:5px">Card Expiry Date:</label>
+          <input type="Number" id="expiry" placeholder="mm/yy" name="cardexpiry">
+        </div>
+        <div class="row" style="padding:20px">
+          <div class="col-sm-2"></div>
+          <div class="oj-sm-10">
+            <a class="btnBuy btn" [routerLink]="['/finish']">Buy now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" >
+      <div>
+        <a href="https://www.paypal.com/signin?returnUri=https%3A%2F%2Fwww.paypal.com%2Fcgi-bin%2Fwebscr%3fcmd%3d_account" style="text-decoration:underline">Pay with Paypal</a>
+      </div>
+    </div>
+  </div>
+</div>

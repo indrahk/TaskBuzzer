@@ -1,0 +1,17 @@
+.full-body{
+    overflow-x: hidden;
+    background-image: url('../assets/img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family:'Roboto';
+    color:black;
+}
+.navbar {
+    padding: 20px 10px 0px 10px;
+}
+.nav-label-local {
+    color:white;
+}
+.navbar-nav > li > a:hover {
+    background-color: rgba(224, 215, 215, 0.2);
+}
